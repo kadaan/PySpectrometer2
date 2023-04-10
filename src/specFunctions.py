@@ -368,11 +368,11 @@ def readcal(width):
     if message == 1:
         calmsg1 = "2nd Order Polyfit"
         calmsg2 = "Using 3 cal points"
-        calmsg3 = "R-squared={:.8f}".format(calibration_error)
+        calmsg3 = "R-squared={:.6f}".format(calibration_error)
     if message == 2:
         calmsg1 = "3rd Order Polyfit"
         calmsg2 = "Using > 3 cal points"
-        calmsg3 = "R-squared={:.8f}".format(calibration_error)
+        calmsg3 = "R-squared={:.6f}".format(calibration_error)
 
     return [wavelengthData, calmsg1, calmsg2, calmsg3]
 
